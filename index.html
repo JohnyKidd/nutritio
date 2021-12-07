@@ -3,9 +3,103 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <link href="/icons/fontawesome/css/all.css" rel="stylesheet">
         <script src="main.js" defer></script>
     </head>
     <body>
-        
+        <div id="header">
+            <h1 id="title">Nutrition Application</h1>
+            <i id="burgerIcon" class="fas fa-hamburger fa-3x"></i>
+        </div>
+
+        <div id="mealContainer">
+            <div class="meals" id="breakfast">
+                <p class="mealTitles">Today's Breakfast</p>
+                <div class="foodDiv">
+                    <label for="breakfastName">Food name:</label>
+                    <div class="inputDiv">
+                        <input type="text" id="breakfastName">
+                    </div>
+                    <label for="breakfastServing">Serving size (example: 100g):</label>
+                    <div class="inputDiv">
+                        <input type="text" id="breakfastServing">
+                    </div>
+                </div>
+                <button class="submit" id="breakfastSubmit">
+                    +
+                </button>
+                <button class="clear" id="breakfastClear">
+                    CLEAR
+                </button>
+                <div id="breakfastDone">
+
+                </div>
+                <div>
+                    <p id="breakfastCalories" class="calorieLabels">
+                        0
+                    </p>
+                </div>
+            </div>
+
+            <div class="meals" id="lunch">
+                <p class="mealTitles">Today's Lunch</p>
+                <div class="foodDiv">
+                    <label for="lunchName">Food name:</label>
+                    <div class="inputDiv">
+                        <input type="text" id="lunchName">
+                    </div>
+                    <label for="lunchServing">Serving size (example: 100g):</label>
+                    <div class="inputDiv">
+                        <input type="text" id="lunchServing">
+                    </div>
+                </div>
+                <button class="submit"id="lunchSubmit">
+                    +
+                </button>
+                <button class="clear" id="lunchClear">
+                    CLEAR
+                </button>
+                <div id="lunchDone">
+
+                </div>
+                <div>
+                    <p id="lunchCalories" class="calorieLabels">
+                        0
+                    </p>
+                </div>
+            </div>
+
+            <div class="meals" id="dinner">
+                <p class="mealTitles">Today's Dinner</p>
+                <div class="foodDiv">
+                    <label for="dinnerName">Food name:</label>
+                    <div class="inputDiv">
+                        <input type="text" id="dinnerName">
+                    </div>
+                    <label for="dinnerServing">Serving size (example: 100g):</label>
+                    <div class="inputDiv">
+                        <input type="text" id="dinnerServing">
+                    </div>
+                </div>
+                <button class="submit" id="dinnerSubmit"">
+                    +
+                </button>
+                <button class="clear" id="dinnerClear">
+                    CLEAR
+                </button>
+                <div id="dinnerDone">
+
+                </div>
+                <div>
+                    <p id="dinnerCalories" class="calorieLabels">
+                        0
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="totalIntake">
+            <p class="calorieLabels">Total calories today:</p>
+            <p class="calorieLabels" id="intake">0</p>
+        </div>
     </body>
 </html>
